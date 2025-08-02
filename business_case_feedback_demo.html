@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Business Case Feedback Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        textarea { width: 100%; height: 150px; margin-top: 10px; }
+        #feedback-box, #questionnaire { display: none; margin-top: 20px; }
+        .question { margin-top: 15px; }
+        button { padding: 10px 20px; margin-top: 10px; }
+    </style>
+    <script>
+        function generateFeedback() {
+            const response = document.getElementById("case-input").value.trim();
+            const feedbackBox = document.getElementById("feedback-box");
+            const questionnaire = document.getElementById("questionnaire");
+
+            if (response.length === 0) {
+                alert("Scrivi prima la tua risposta al business case.");
+                return;
+            }
+
+            // Simulazione di un feedback AI (qui inseriamo un testo fisso)
+            let feedback;
+            if (response.split(" ").length >= 50) {
+                feedback = "Hai ottenuto un punteggio di 8/10. Hai identificato vari fattori chiave e mostrato una buona capacità di analisi strategica.";
+            } else if (response.split(" ").length >= 25) {
+                feedback = "Hai ottenuto un punteggio di 6/10. Hai considerato alcuni fattori importanti ma manca profondità.";
+            } else {
+                feedback = "Hai ottenuto un punteggio di 4/10. La risposta è molto sintetica e mancano elementi rilevanti.";
+            }
+
+            document.getElementById("feedback-text").innerText = feedback;
+            feedbackBox.style.display = "block";
+            questionnaire.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+<h2>Business Case</h2>
+<p>Immagina di lavorare per una società di consulenza. Un cliente ti chiede se vale la pena lanciare un nuovo prodotto in un mercato europeo. Quali fattori prenderesti in considerazione per rispondere?</p>
+
+<textarea id="case-input" placeholder="Scrivi qui la tua risposta..."></textarea><br>
+<button onclick="generateFeedback()">Invia e ricevi feedback</button>
+
+<div id="feedback-box">
+    <h3>📢 Il tuo Feedback</h3>
+    <p id="feedback-text"></p>
+</div>
+
+<div id="questionnaire">
+    <h3>📋 Domande post-feedback</h3>
+    <div class="question">1. Su una scala da 1 a 10, quanto ti sei sentito motivato dopo aver ricevuto il feedback? <input type="number" min="1" max="10"></div>
+    <div class="question">2. Quanto pensi che il feedback rifletta la tua reale capacità? <input type="number" min="1" max="10"></div>
+    <div class="question">3. Hai provato disagio o ansia nel riceverlo? <input type="number" min="1" max="10"></div>
+</div>
+
+</body>
+</html>
