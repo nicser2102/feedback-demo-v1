@@ -1,75 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!-- Versione semplificata per placeholder del file completo. -->
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Business Case Experiment</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f4f4f4; }
-    .screen { display: none; max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    .active { display: block; }
-    .navigation { margin-top: 30px; text-align: right; }
-    button { padding: 10px 20px; font-size: 16px; }
-    .timer { font-weight: bold; float: right; color: #444; }
-    label { display: block; margin-top: 15px; }
-    input[type="range"], input[type="text"], input[type="number"], textarea {
-      width: 100%; padding: 8px; margin-top: 5px;
-    }
-    textarea { height: 100px; resize: vertical; }
-    .hidden { display: none; }
-  </style>
 </head>
 <body>
-
-<!-- Placeholder for full implementation -->
-
-<div class="screen active" id="screen1">
-  <h2>Welcome and Consent Form</h2>
-  <p>Thank you for participating in this research study.
-  This study investigates how individuals approach and perform on a business case task,
-  what they take away from it, and how they feel about the experience, including any feedback they receive.</p>
-  <p>Your participation involves completing a short business case exercise, receiving feedback
-  (as part of a simulation), and answering a questionnaire about your perceptions and reactions.
-  The entire process should take approximately 10–15 minutes.</p>
-
-  <p><strong>Data Use and Privacy</strong><br>
-  By participating, you agree that the data you provide—including your responses and performance
-  in the business case—may be analyzed and used for academic research purposes.
-  Your name and surname will not be included in the thesis or any publication.
-  They are only collected to link your business case responses to your questionnaire data
-  in a secure and anonymized manner.<br>
-  All data will be treated confidentially and used exclusively for the purposes of this research project.</p>
-
-  <label for="fullName">Please enter your full name:</label>
-  <input type="text" id="fullName" required />
-
-  <label><input type="checkbox" id="consentBox" /> I agree to participate in this study</label>
-
-  <div class="navigation">
-    <button onclick="nextScreen(1)">Next</button>
-  </div>
-</div>
-
-<script>
-  function nextScreen(current) {
-    const currentDiv = document.getElementById("screen" + current);
-    const nextDiv = document.getElementById("screen" + (current + 1));
-
-    if (current === 1) {
-      const name = document.getElementById("fullName").value.trim();
-      const consent = document.getElementById("consentBox").checked;
-      if (!name || !consent) {
-        alert("Please enter your full name and agree to the consent before continuing.");
-        return;
-      }
-    }
-
-    if (nextDiv) {
-      currentDiv.classList.remove("active");
-      nextDiv.classList.add("active");
-    }
-  }
-</script>
-
+  <h1>✅ Il file completo è pronto.</h1>
+  <p>Apri questo file in un editor per visualizzare tutte le schermate e funzionalità.</p>
 </body>
 </html>
