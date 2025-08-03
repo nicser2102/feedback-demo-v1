@@ -1,62 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Business Case Feedback Demo</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        textarea { width: 100%; height: 150px; margin-top: 10px; }
-        #feedback-box, #questionnaire { display: none; margin-top: 20px; }
-        .question { margin-top: 15px; }
-        button { padding: 10px 20px; margin-top: 10px; }
-    </style>
-    <script>
-        function generateFeedback() {
-            const response = document.getElementById("case-input").value.trim();
-            const feedbackBox = document.getElementById("feedback-box");
-            const questionnaire = document.getElementById("questionnaire");
-
-            if (response.length === 0) {
-                alert("Scrivi prima la tua risposta al business case.");
-                return;
-            }
-
-            // Simulazione di un feedback AI (qui inseriamo un testo fisso)
-            let feedback;
-            if (response.split(" ").length >= 50) {
-                feedback = "Hai ottenuto un punteggio di 8/10. Hai identificato vari fattori chiave e mostrato una buona capacità di analisi strategica.";
-            } else if (response.split(" ").length >= 25) {
-                feedback = "Hai ottenuto un punteggio di 6/10. Hai considerato alcuni fattori importanti ma manca profondità.";
-            } else {
-                feedback = "Hai ottenuto un punteggio di 4/10. La risposta è molto sintetica e mancano elementi rilevanti.";
-            }
-
-            document.getElementById("feedback-text").innerText = feedback;
-            feedbackBox.style.display = "block";
-            questionnaire.style.display = "block";
-        }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Business Case Experiment</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f4f4f4; }
+    .screen { display: none; max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .active { display: block; }
+    .navigation { margin-top: 30px; text-align: right; }
+    button { padding: 10px 20px; font-size: 16px; }
+    .timer { font-weight: bold; float: right; color: #444; }
+    label { display: block; margin-top: 15px; }
+    input[type="range"], input[type="text"], input[type="number"], textarea {
+      width: 100%; padding: 8px; margin-top: 5px;
+    }
+    textarea { height: 100px; resize: vertical; }
+    .hidden { display: none; }
+  </style>
 </head>
 <body>
 
-<h2>Business Case</h2>
-<p>Immagina di lavorare per una società di consulenza. Un cliente ti chiede se vale la pena lanciare un nuovo prodotto in un mercato europeo. Quali fattori prenderesti in considerazione per rispondere?</p>
+<!-- Placeholder for full implementation -->
 
-<textarea id="case-input" placeholder="Scrivi qui la tua risposta..."></textarea><br>
-<button onclick="generateFeedback()">Invia e ricevi feedback</button>
+<div class="screen active" id="screen1">
+  <h2>Welcome and Consent Form</h2>
+  <p>Thank you for participating in this research study.
+  This study investigates how individuals approach and perform on a business case task,
+  what they take away from it, and how they feel about the experience, including any feedback they receive.</p>
+  <p>Your participation involves completing a short business case exercise, receiving feedback
+  (as part of a simulation), and answering a questionnaire about your perceptions and reactions.
+  The entire process should take approximately 10–15 minutes.</p>
 
-<div id="feedback-box">
-    <h3>📢 Il tuo Feedback</h3>
-    <p id="feedback-text"></p>
+  <p><strong>Data Use and Privacy</strong><br>
+  By participating, you agree that the data you provide—including your responses and performance
+  in the business case—may be analyzed and used for academic research purposes.
+  Your name and surname will not be included in the thesis or any publication.
+  They are only collected to link your business case responses to your questionnaire data
+  in a secure and anonymized manner.<br>
+  All data will be treated confidentially and used exclusively for the purposes of this research project.</p>
+
+  <label for="fullName">Please enter your full name:</label>
+  <input type="text" id="fullName" required />
+
+  <label><input type="checkbox" id="consentBox" /> I agree to participate in this study</label>
+
+  <div class="navigation">
+    <button onclick="nextScreen(1)">Next</button>
+  </div>
 </div>
 
-<div id="questionnaire">
-    <h3>📋 Domande post-feedback</h3>
-    <div class="question">1. Su una scala da 1 a 10, quanto ti sei sentito motivato dopo aver ricevuto il feedback? <input type="number" min="1" max="10"></div>
-    <div class="question">2. Quanto pensi che il feedback rifletta la tua reale capacità? <input type="number" min="1" max="10"></div>
-    <div class="question">3. Hai provato disagio o ansia nel riceverlo? <input type="number" min="1" max="10"></div>
-</div>
+<script>
+  function nextScreen(current) {
+    const currentDiv = document.getElementById("screen" + current);
+    const nextDiv = document.getElementById("screen" + (current + 1));
+
+    if (current === 1) {
+      const name = document.getElementById("fullName").value.trim();
+      const consent = document.getElementById("consentBox").checked;
+      if (!name || !consent) {
+        alert("Please enter your full name and agree to the consent before continuing.");
+        return;
+      }
+    }
+
+    if (nextDiv) {
+      currentDiv.classList.remove("active");
+      nextDiv.classList.add("active");
+    }
+  }
+</script>
 
 </body>
 </html>
