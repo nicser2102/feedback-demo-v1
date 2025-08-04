@@ -373,539 +373,566 @@
                             <span>10 (Very strongly)</span>
                         </div>
                         <p id="q10-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
-                    </div>
-                </div>
-                <div>
-                    <p class="text-lg font-medium text-gray-800 mb-4">Q11. How strongly did you feel each of the following emotions related to the feedback experience?</p>
-                    <p class="text-sm text-gray-600">1 = Not at all, 10 = Very strongly</p>
-                    <div class="mt-4 space-y-4">
-                        <div class="flex items-center space-x-4">
-                            <label class="w-1/2 text-gray-700">Anxious or nervous</label>
-                            <div class="slider-container relative flex-grow">
-                                <input type="range" min="1" max="10" value="5" class="w-full" id="q11a-slider">
-                                <div class="flex justify-between mt-2 text-sm text-gray-600">
-                                    <span>1</span>
-                                    <span>10</span>
-                                </div>
-                                <p id="q11a-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
                             </div>
                         </div>
-                        <div class="flex items-center space-x-4">
-                            <label class="w-1/2 text-gray-700">Focused on learning and improving for next time</label>
-                            <div class="slider-container relative flex-grow">
-                                <input type="range" min="1" max="10" value="5" class="w-full" id="q11b-slider">
-                                <div class="flex justify-between mt-2 text-sm text-gray-600">
-                                    <span>1</span>
-                                    <span>10</span>
+                        <div>
+                            <p class="text-lg font-medium text-gray-800 mb-4">Q11. How strongly did you feel each of the following emotions related to the feedback experience?</p>
+                            <p class="text-sm text-gray-600">1 = Not at all, 10 = Very strongly</p>
+                            <div class="mt-4 space-y-4">
+                                <div class="flex items-center space-x-4">
+                                    <label class="w-1/2 text-gray-700">Anxious or nervous</label>
+                                    <div class="slider-container relative flex-grow">
+                                        <input type="range" min="1" max="10" value="5" class="w-full" id="q11a-slider">
+                                        <div class="flex justify-between mt-2 text-sm text-gray-600">
+                                            <span>1</span>
+                                            <span>10</span>
+                                        </div>
+                                        <p id="q11a-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
+                                    </div>
                                 </div>
-                                <p id="q11b-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
+                                <div class="flex items-center space-x-4">
+                                    <label class="w-1/2 text-gray-700">Focused on learning and improving for next time</label>
+                                    <div class="slider-container relative flex-grow">
+                                        <input type="range" min="1" max="10" value="5" class="w-full" id="q11b-slider">
+                                        <div class="flex justify-between mt-2 text-sm text-gray-600">
+                                            <span>1</span>
+                                            <span>10</span>
+                                        </div>
+                                        <p id="q11b-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <label class="w-1/2 text-gray-700">Discomfort</label>
+                                    <div class="slider-container relative flex-grow">
+                                        <input type="range" min="1" max="10" value="5" class="w-full" id="q11c-slider">
+                                        <div class="flex justify-between mt-2 text-sm text-gray-600">
+                                            <span>1</span>
+                                            <span>10</span>
+                                        </div>
+                                        <p id="q11c-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <label class="w-1/2 text-gray-700">Feeling good about myself</label>
+                                    <div class="slider-container relative flex-grow">
+                                        <input type="range" min="1" max="10" value="5" class="w-full" id="q11d-slider">
+                                        <div class="flex justify-between mt-2 text-sm text-gray-600">
+                                            <span>1</span>
+                                            <span>10</span>
+                                        </div>
+                                        <p id="q11d-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex items-center space-x-4">
-                            <label class="w-1/2 text-gray-700">Discomfort</label>
-                            <div class="slider-container relative flex-grow">
-                                <input type="range" min="1" max="10" value="5" class="w-full" id="q11c-slider">
+                    </div>
+                    <button id="next-9" class="mt-10 w-full bg-blue-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors">Next</button>
+                </div>
+        
+                <!-- Screen 10: General Questions -->
+                <div id="screen-10" class="screen">
+                    <h1 class="text-3xl font-bold text-gray-800 mb-6">General Questions</h1>
+                    <p class="text-gray-700 mb-8">The following questions are not related to the business case. Please answer them based on your general thoughts and feelings in everyday or professional situations. Use the slider to indicate how much each statement describes you, where: <strong>0 = Not at all</strong> | <strong>10 = Completely</strong></p>
+        
+                    <div class="space-y-8">
+                        <div>
+                            <p class="text-lg font-medium text-gray-800 mb-4">Q7. I feel nervous when I have to speak or perform in front of other people.</p>
+                            <div class="slider-container relative">
+                                <input type="range" min="0" max="10" value="5" class="w-full" id="q7-general-slider">
                                 <div class="flex justify-between mt-2 text-sm text-gray-600">
-                                    <span>1</span>
+                                    <span>0</span>
                                     <span>10</span>
                                 </div>
-                                <p id="q11c-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
+                                <p id="q7-general-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
                             </div>
                         </div>
-                        <div class="flex items-center space-x-4">
-                            <label class="w-1/2 text-gray-700">Feeling good about myself</label>
-                            <div class="slider-container relative flex-grow">
-                                <input type="range" min="1" max="10" value="5" class="w-full" id="q11d-slider">
+        
+                        <div>
+                            <p class="text-lg font-medium text-gray-800 mb-4">Q8. I avoid situations where others might evaluate me.</p>
+                            <div class="slider-container relative">
+                                <input type="range" min="0" max="10" value="5" class="w-full" id="q8-general-slider">
                                 <div class="flex justify-between mt-2 text-sm text-gray-600">
-                                    <span>1</span>
+                                    <span>0</span>
                                     <span>10</span>
                                 </div>
-                                <p id="q11d-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
+                                <p id="q8-general-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
+                            </div>
+                        </div>
+        
+                        <div>
+                            <p class="text-lg font-medium text-gray-800 mb-4">Q9. I worry about being judged in social or professional situations.</p>
+                            <div class="slider-container relative">
+                                <input type="range" min="0" max="10" value="5" class="w-full" id="q9-general-slider">
+                                <div class="flex justify-between mt-2 text-sm text-gray-600">
+                                    <span>0</span>
+                                    <span>10</span>
+                                </div>
+                                <p id="q9-general-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
                             </div>
                         </div>
                     </div>
+                    <button id="next-10" class="mt-10 w-full bg-blue-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors">Next</button>
                 </div>
-            </div>
-            <button id="next-9" class="mt-10 w-full bg-blue-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors">Next</button>
-        </div>
-
-        <!-- Screen 10: General Questions -->
-        <div id="screen-10" class="screen">
-            <h1 class="text-3xl font-bold text-gray-800 mb-6">General Questions</h1>
-            <p class="text-gray-700 mb-8">The following questions are not related to the business case. Please answer them based on your general thoughts and feelings in everyday or professional situations. Use the slider to indicate how much each statement describes you, where: <strong>0 = Not at all</strong> | <strong>10 = Completely</strong></p>
-
-            <div class="space-y-8">
-                <div>
-                    <p class="text-lg font-medium text-gray-800 mb-4">Q7. I feel nervous when I have to speak or perform in front of other people.</p>
-                    <div class="slider-container relative">
-                        <input type="range" min="0" max="10" value="5" class="w-full" id="q7-general-slider">
-                        <div class="flex justify-between mt-2 text-sm text-gray-600">
-                            <span>0</span>
-                            <span>10</span>
+        
+                <!-- Screen 11: Final Thank You and Debrief -->
+                <div id="screen-11" class="screen">
+                    <div id="sending-data" class="flex flex-col items-center justify-center p-8">
+                        <div class="loader"></div>
+                        <p class="mt-4 text-center text-lg text-gray-600">Invio delle risposte in corso...</p>
+                    </div>
+                    <div id="submission-success" class="hidden">
+                        <h1 class="text-4xl font-bold text-gray-800 mb-6">🎉 Thank you for completing the questionnaire!</h1>
+                        <div class="space-y-4 text-gray-700 leading-relaxed">
+                            <p>We appreciate your time and effort. Before concluding, we’d like to share one final clarification about the purpose of this study.</p>
+                            <p>At the beginning of the questionnaire, we asked you to enter your name and surname. Later on, you were shown scenarios in which your feedback and performance score appeared to be visible to other participants and compared publicly.</p>
+                            <p class="text-xl font-bold text-blue-600 mt-6">👉 This was intentionally designed as part of the experiment:</p>
+                            <p>L'obiettivo di questo studio è capire come le persone reagiscono alla ricezione di feedback quando si sentono osservate rispetto a quando si sentono anonime.</p>
+                            <h2 class="text-2xl font-bold text-gray-800 mt-8">🔐 Your Privacy Is Fully Protected</h2>
+                            <p>You can now breathe a sigh of relief.</p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li><span class="font-bold text-green-600">✅</span> None of the information you provided will be shared with anyone.</li>
+                                <li><span class="font-bold text-green-600">✅</span> Neither your name nor your business case performance can be viewed by the researcher.</li>
+                                <li><span class="font-bold text-green-600">✅</span> All data are automatically and irreversibly anonymized.</li>
+                            </ul>
                         </div>
-                        <p id="q7-general-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
+                    </div>
+                    <div id="submission-error" class="hidden">
+                        <h1 class="text-4xl font-bold text-gray-800 mb-6">Ops, qualcosa è andato storto!</h1>
+                        <p class="text-lg text-gray-700">Non siamo riusciti a inviare le tue risposte. Per favore, prova ad aggiornare la pagina e riprovare, o contatta il ricercatore. Ci scusiamo per l'inconveniente.</p>
                     </div>
                 </div>
-
-                <div>
-                    <p class="text-lg font-medium text-gray-800 mb-4">Q8. I avoid situations where others might evaluate me.</p>
-                    <div class="slider-container relative">
-                        <input type="range" min="0" max="10" value="5" class="w-full" id="q8-general-slider">
-                        <div class="flex justify-between mt-2 text-sm text-gray-600">
-                            <span>0</span>
-                            <span>10</span>
-                        </div>
-                        <p id="q8-general-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
-                    </div>
-                </div>
-
-                <div>
-                    <p class="text-lg font-medium text-gray-800 mb-4">Q9. I worry about being judged in social or professional situations.</p>
-                    <div class="slider-container relative">
-                        <input type="range" min="0" max="10" value="5" class="w-full" id="q9-general-slider">
-                        <div class="flex justify-between mt-2 text-sm text-gray-600">
-                            <span>0</span>
-                            <span>10</span>
-                        </div>
-                        <p id="q9-general-value" class="text-center mt-2 text-lg font-semibold text-blue-600">5</p>
-                    </div>
-                </div>
+        
             </div>
-            <button id="next-10" class="mt-10 w-full bg-blue-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors">Next</button>
-        </div>
-
-        <!-- Screen 11: Final Thank You and Debrief -->
-        <div id="screen-11" class="screen">
-            <div id="sending-data" class="flex flex-col items-center justify-center p-8">
-                <div class="loader"></div>
-                <p class="mt-4 text-center text-lg text-gray-600">Invio delle risposte in corso...</p>
-            </div>
-            <div id="submission-success" class="hidden">
-                <h1 class="text-4xl font-bold text-gray-800 mb-6">🎉 Grazie per aver completato il questionario!</h1>
-                <div class="space-y-4 text-gray-700 leading-relaxed">
-                    <p>Apprezziamo il tuo tempo e il tuo sforzo. Prima di concludere, vorremmo condividere un'ultima precisazione sullo scopo di questo studio.</p>
-                    <p>All'inizio del questionario, ti abbiamo chiesto di inserire il tuo nome e cognome. In seguito, ti sono stati mostrati scenari in cui il tuo feedback e il tuo punteggio sembravano essere visibili ad altri partecipanti e confrontati pubblicamente.</p>
-                    <p class="text-xl font-bold text-blue-600 mt-6">👉 Questo è stato progettato intenzionalmente come parte dell'esperimento:</p>
-                    <p>L'obiettivo di questo studio è capire come le persone reagiscono alla ricezione di feedback quando si sentono osservate rispetto a quando si sentono anonime.</p>
-                    <h2 class="text-2xl font-bold text-gray-800 mt-8">🔐 La tua privacy è completamente protetta</h2>
-                    <p>Ora puoi tirare un sospiro di sollievo.</p>
-                    <ul class="list-disc list-inside space-y-2 ml-4">
-                        <li><span class="font-bold text-green-600">✅</span> Nessuna delle informazioni che hai fornito verrà condivisa con nessuno.</li>
-                        <li><span class="font-bold text-green-600">✅</span> Né il tuo nome né le tue prestazioni nel business case possono essere visualizzate dal ricercatore.</li>
-                        <li><span class="font-bold text-green-600">✅</span> Tutti i dati vengono automaticamente e irreversibilmente anonimizzati.</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="submission-error" class="hidden">
-                <h1 class="text-4xl font-bold text-gray-800 mb-6">Ops, qualcosa è andato storto!</h1>
-                <p class="text-lg text-gray-700">Non siamo riusciti a inviare le tue risposte. Per favore, prova ad aggiornare la pagina e riprovare, o contatta il ricercatore. Ci scusiamo per l'inconveniente.</p>
-            </div>
-        </div>
-
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // --- Global State Management ---
-            const state = {
-                currentScreen: 1,
-                name: '',
-                consent: false,
-                q1: 5, q2: 5, q3: 5, q4: 5,
-                q_case_1: '',
-                q_case_2: '',
-                q5_score: 5, q5_text: '',
-                q6: 5, q7: 5, q8: 5,
-                q9: 5, q10: 5, q11a: 5, q11b: 5, q11c: 5, q11d: 5,
-                q7_general: 5, q8_general: 5, q9_general: 5,
-                aiScore: 0,
-                aiFeedback: ''
-            };
-
-            // Gemini API configuration
-            const GEMINI_API_KEY = "AIzaSyBiKlgq8Idj9MorHSH73-QYBeJfe7LQInc"; // INSERISCI QUI LA TUA CHIAVE API DI GEMINI
-            const GEMINI_MODEL = "gemini-2.5-flash-preview-05-20";
-
-            // Google Apps Script URL (Deploy as Web App, set access to "Anyone")
-            // INSERISCI QUI L'URL DEL TUO SCRIPT DI GOOGLE
-            const GOOGLE_SCRIPT_URL = "https://sheets-proxy.onrender.com/submit";
-
-            // --- UI Elements ---
-            const screens = document.querySelectorAll('.screen');
-            const nextButtons = document.querySelectorAll('[id^="next-"]');
-            const sliders = document.querySelectorAll('input[type="range"]');
-            const messageBox = document.getElementById('message-box');
-            const timerDisplay = document.getElementById('timer-display');
-
-            // --- Helper Functions ---
-            function showScreen(screenNumber) {
-                screens.forEach(screen => screen.style.display = 'none');
-                document.getElementById(`screen-${screenNumber}`).style.display = 'block';
-                state.currentScreen = screenNumber;
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-
-            function showMessage(text) {
-                messageBox.textContent = text;
-                messageBox.style.display = 'block';
-                setTimeout(() => {
-                    messageBox.style.opacity = '1';
-                }, 10);
-                setTimeout(() => {
-                    messageBox.style.opacity = '0';
-                    setTimeout(() => messageBox.style.display = 'none', 500);
-                }, 3000);
-            }
-
-            // Function to update slider value display
-            sliders.forEach(slider => {
-                const valueDisplay = document.getElementById(slider.id.replace('slider', 'value'));
-                slider.addEventListener('input', () => {
-                    if (valueDisplay) {
-                        valueDisplay.textContent = slider.value;
-                    }
-                    // Update state for sliders on change
-                    const key = slider.id.replace('-slider', '');
-                    state[key] = parseInt(slider.value, 10);
-                });
-            });
-
-            // Timer Function for screens 4 and 5
-            function startTimer(duration, onFinish) {
-                let timer = duration;
-                timerDisplay.style.display = 'flex';
-                timerDisplay.textContent = timer;
-
-                const interval = setInterval(() => {
-                    timer--;
-                    timerDisplay.textContent = timer;
-                    if (timer <= 0) {
-                        clearInterval(interval);
-                        timerDisplay.style.display = 'none';
-                        onFinish();
-                    }
-                }, 1000);
-
-                return interval;
-            }
-
-            // --- API Call to Gemini ---
-            async function getFeedbackFromAI() {
-                document.getElementById('loading-feedback').style.display = 'block';
-                document.getElementById('feedback-content').style.display = 'none';
-
-                const prompt = `You are an expert evaluator assessing consulting-style business case responses. You will receive two answers to a business case and must evaluate each individually, assigning a score from 1 to 10 per answer based on clearly defined criteria. Then, provide a structured and standardized feedback paragraph. Finally, calculate the overall score as the average of the two individual scores (rounded to one decimal place).
-
-                📌 Business Case Prompt: A diesel truck manufacturer that primarily sells to 3PL (third-party logistics companies), carriers, and private fleet companies (e.g., Amazon) is considering entering the electric vehicle market. The CEO of the company is asking for your advice on whether they should produce and sell electric trucks (e-trucks).
-
-                🔹 Question 1: How would you evaluate whether they should produce and sell electric trucks (e-trucks)? What factors would you consider?
-
-                Reference solution for Question 1:
-                1. E-truct market
-                -Size and growth rate
-                -Largest e-truck producers (incl. market shares and key differentiating points)
-                -Average margin in the space
-                2. Diesel truck manufacturer
-                -Target customer segments for e-trucks (same B2B or B2C too?)
-                -Expected e-truck model (e.g., type, key selling points)
-                -Distribution (own/partner dealerships; online; etc.)
-                3. Valuation
-                -Expected capex
-                -Investment criteria (e.g., ROI, NPV, payback period)
-                -Expected profitability (incl. synergy analysis):
-                --Revenue
-                --Costs
-                4. Market entry risks
-                -Market-specific risks
-                -Financial risks
-                -Operational risks
-
-                🟠 Scoring criteria for Question 1 (1-10 total):
-                Structure (0 to 2 points):
-                2 points: Well-structured around 4 key areas (e.g., market, internal fit, financials, risks).
-                1.75–1 points: Slightly different structure but logically consistent and complete.
-                1–0.25 points: Weak structure or missing areas, but follows a rational sequence.
-                0 points: No structure or disorganized response.
-                Variables and Factors Considered (1 to 8.5 points):
-                Award points based on the number of relevant variables mentioned (using synonyms and interpretation allowed):
-                9+ variables = 8.5 points
-                8 variables = 7
-                7 variables = 6
-                5 variables = 4
-                4 variables = 3
-                3 variables = 2
-                2 variables = 1
-                Fewer than 2 = 0
-
-                🔹 Question 2: What are the key purchasing decision criteria for customers choosing an electric truck (instead of a diesel one)? What factors do you think influence their decision?
-                
-                Reference solution for Question 2:
-                1. Financial analysis
-                -Cost factors:
-                --Truck price
-                --Maintenance (spare parts, services)
-                --Fuel/electricity consumption
-                --Insurance
-                -Revenue factors:
-                --Truck's useful life
-                --Capacity (power, payload, mileage)
-                --Utilization rate (due to fewer repairs)
-                --Salvage value
-                -Investment:
-                --ROI/payback
-                --Capex for charging stations
-                2. Strategic value
-                -Customer experience improvements
-                --Brand image (eco-friendly)
-                -Risk diversification
-                --Less dependency on oil/gas
-                --Lower legal/pollution compliance risks
-                3. Risks
-                -Operational risks:
-                --Lack of support infrastructure (mechanics, service stations)
-                --Dual-fleet complexity
-                --Immature tech (design flaws)
-                --Charging time
-                --Lack of charging stations
-                -Financial risks:
-                --Loss of scale economies
-                --Underestimated costs or optimistic revenues
-                
-                🟠 Scoring criteria for Question 2 (1-10 total):
-                Structure (0 to 1 point):
-                1 point: Clear structure following the 3 key areas
-                0.5 points: Some logical grouping of factors
-                0 points: No structure
-                Variables and Factors Considered (1 to 7.5 points):
-                9+ variables = 7.5
-                8 variables = 7
-                7 variables = 6.5
-                6 variables = 5.5
-                5 variables = 4.5
-                4 variables = 4
-                3 variables = 3
-                2 variables = 2
-                1 variable = 1
-                Diversity of Areas Covered (0 to 1.5 points):
-                Based on how many of the following categories are covered:
-                Costs Factors, Revenue Factors, Investment, Improvement in Customer Experience, Risk Diversification, Operational Risks, Financial Risks
-                Scoring:
-                5+ areas = 1.5
-                4 areas = 1.25
-                3 areas = 1
-                2 areas = 0.5
-                1 area = 0
-
-                ✅ Final Output Format:
-                Score: [Average of the two individual question scores, 1 decimal place]
-                Feedback:
-                Your feedback must follow this exact structure and adapt only to the candidate’s performance. Fill in the brackets appropriately:
-                The answer to Question 1 was [well structured and included all key areas / well structured but missed some key areas such as... / poorly structured but followed a logical flow; it could have been structured into the following 4 areas... / poorly structured and lacked logical order; it could have been organized into the following areas...].
-                You included [most of the key factors needed to assess this type of problem / a good number of relevant factors / some relevant factors, but could have also included... / very few relevant factors; you should have considered at least the following variables...].
-                In Question 2, you [structured your answer well / attempted to follow a logical structure but could have organized it as follows... / listed the factors in a disorganized way and could have structured it as follows...].
-                You mentioned [a large number of variables across multiple areas / a large number of variables but focused on a narrow set of areas / a good amount of variables across a few areas / only a few variables].
-                Other relevant variables you could have included are: [list here].
-
-                Only return the score and the feedback paragraph. Do not include any explanation of how you arrived at your score.
-
-                Here are the user's answers:
-                ---
-                Question 1 Answer:
-                ${state.q_case_1}
-
-                Question 2 Answer:
-                ${state.q_case_2}
-                ---
-                `;
-
-                const payload = {
-                    contents: [{ role: "user", parts: [{ text: prompt }] }],
+        
+            <!-- Firebase SDK Scripts -->
+            <script type="module">
+                import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+                import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+                import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        
+                // Firebase Configuration
+                const firebaseConfig = {
+                    apiKey: "AIzaSyDje8Salia1T1QomP56iZbxu0k54C4B73E",
+                    authDomain: "tesi-250804.firebaseapp.com",
+                    projectId: "tesi-250804",
+                    storageBucket: "tesi-250804.firebasestorage.app",
+                    messagingSenderId: "31533907598",
+                    appId: "1:31533907598:web:0652624b5401ff1f4b93df",
+                    measurementId: "G-Y7MS3M8YWB"
                 };
-
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
-
-                let retries = 0;
-                const maxRetries = 5;
-                const baseDelay = 1000; // 1 second
-
-                async function fetchWithExponentialBackoff() {
+        
+                // This appId is used for the Firestore collection path
+                const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+                
+                // Global state to store user's answers and progress
+                const state = {
+                    currentScreen: 1,
+                    name: '',
+                    consent: false,
+                    q1: 5, q2: 5, q3: 5, q4: 5,
+                    q_case_1: '',
+                    q_case_2: '',
+                    q5_score: 5, q5_text: '',
+                    q6: 5, q7: 5, q8: 5,
+                    q9: 5, q10: 5, q11a: 5, q11b: 5, q11c: 5, q11d: 5,
+                    q7_general: 5, q8_general: 5, q9_general: 5,
+                    aiScore: 0,
+                    aiFeedback: ''
+                };
+        
+                // Gemini API configuration
+                const GEMINI_API_KEY = "AIzaSyBiKlgq8Idj9MorHSH73-QYBeJfe7LQInc";
+                const GEMINI_MODEL = "gemini-2.5-flash-preview-05-20";
+                
+                let db;
+                let auth;
+                let isAuthReady = false;
+        
+                // Function to initialize Firebase and authenticate the user
+                async function initializeFirebase() {
                     try {
-                        const response = await fetch(apiUrl, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(payload)
+                        console.log("Initializing Firebase...");
+                        const app = initializeApp(firebaseConfig);
+                        db = getFirestore(app);
+                        auth = getAuth(app);
+        
+                        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+                        
+                        onAuthStateChanged(auth, async (user) => {
+                          if (user) {
+                            isAuthReady = true;
+                            console.log("Firebase initialized and authenticated successfully. User UID:", user.uid);
+                          } else {
+                            isAuthReady = false;
+                            console.log("Firebase authentication state changed to 'signed out'. Signing in anonymously...");
+                            await signInAnonymously(auth);
+                          }
                         });
-
-                        if (response.status === 429 && retries < maxRetries) {
-                            const delay = baseDelay * Math.pow(2, retries);
-                            retries++;
-                            await new Promise(resolve => setTimeout(resolve, delay));
-                            return await fetchWithExponentialBackoff();
-                        } else if (!response.ok) {
-                             throw new Error(`API error: ${response.statusText}`);
-                        }
-
-                        const result = await response.json();
-                        if (result.candidates && result.candidates.length > 0 && result.candidates[0].content && result.candidates[0].content.parts && result.candidates[0].content.parts.length > 0) {
-                            const text = result.candidates[0].content.parts[0].text;
-                            // Parse the AI's response
-                            const scoreMatch = text.match(/Score:\s*([\d.]+)/);
-                            const feedbackMatch = text.match(/Feedback:\s*([\s\S]*)/);
-                            if (scoreMatch && feedbackMatch) {
-                                state.aiScore = parseFloat(scoreMatch[1]);
-                                state.aiFeedback = feedbackMatch[1].trim();
-
-                                document.getElementById('user-score').textContent = `🎯 ${state.aiScore.toFixed(1)} / 10`;
-                                document.getElementById('user-feedback').textContent = state.aiFeedback;
-
-                                document.getElementById('loading-feedback').style.display = 'none';
-                                document.getElementById('feedback-content').style.display = 'block';
-                            } else {
-                                throw new Error("AI response format is unexpected.");
-                            }
-                        } else {
-                            throw new Error("AI response content is missing or malformed.");
-                        }
+        
                     } catch (error) {
-                        console.error('Error fetching AI feedback:', error);
-                        showMessage("An error occurred while generating feedback. Please try again.");
-                        document.getElementById('loading-feedback').textContent = "Failed to load feedback.";
+                        console.error("Error initializing Firebase:", error);
                     }
                 }
                 
-                fetchWithExponentialBackoff();
-            }
-
-            // Function to send data to Google Sheet
-            async function sendDataToSheet() {
-                document.getElementById('sending-data').style.display = 'flex';
-                document.getElementById('submission-success').style.display = 'none';
-                document.getElementById('submission-error').style.display = 'none';
-
-                const data = {
-                    name: state.name,
-                    q1: state.q1, q2: state.q2, q3: state.q3, q4: state.q4,
-                    q_case_1: state.q_case_1,
-                    q_case_2: state.q_case_2,
-                    q5_score: state.q5_score,
-                    q5_text: state.q5_text,
-                    q6: state.q6, q7: state.q7, q8: state.q8,
-                    q9: state.q9, q10: state.q10, q11a: state.q11a, q11b: state.q11b, q11c: state.q11c, q11d: state.q11d,
-                    q7_general: state.q7_general, q8_general: state.q8_general, q9_general: state.q9_general,
-                    aiScore: state.aiScore,
-                    aiFeedback: state.aiFeedback
-                };
-                
-                try {
-                    const response = await fetch(GOOGLE_SCRIPT_URL, {
-                        method: 'POST',
-                        body: JSON.stringify(data),
-                        headers: {
-                            'Content-Type': 'application/json'
+                initializeFirebase();
+        
+                // UI Elements
+                const screens = document.querySelectorAll('.screen');
+                const nextButtons = document.querySelectorAll('[id^="next-"]');
+                const sliders = document.querySelectorAll('input[type="range"]');
+                const messageBox = document.getElementById('message-box');
+                const timerDisplay = document.getElementById('timer-display');
+        
+                // Helper functions
+                function showScreen(screenNumber) {
+                    screens.forEach(screen => screen.style.display = 'none');
+                    document.getElementById(`screen-${screenNumber}`).style.display = 'block';
+                    state.currentScreen = screenNumber;
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+        
+                function showMessage(text) {
+                    messageBox.textContent = text;
+                    messageBox.style.display = 'block';
+                    setTimeout(() => {
+                        messageBox.style.opacity = '1';
+                    }, 10);
+                    setTimeout(() => {
+                        messageBox.style.opacity = '0';
+                        setTimeout(() => messageBox.style.display = 'none', 500);
+                    }, 3000);
+                }
+        
+                // Update slider value display and state
+                sliders.forEach(slider => {
+                    const valueDisplay = document.getElementById(slider.id.replace('slider', 'value'));
+                    slider.addEventListener('input', () => {
+                        if (valueDisplay) {
+                            valueDisplay.textContent = slider.value;
                         }
+                        const key = slider.id.replace('-slider', '');
+                        state[key] = parseInt(slider.value, 10);
                     });
-
-                    // Check if the response is ok before trying to parse JSON
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
+                });
+        
+                // Timer function for timed questions
+                function startTimer(duration, onFinish) {
+                    let timer = duration;
+                    timerDisplay.style.display = 'flex';
+                    timerDisplay.textContent = timer;
+        
+                    const interval = setInterval(() => {
+                        timer--;
+                        timerDisplay.textContent = timer;
+                        if (timer <= 0) {
+                            clearInterval(interval);
+                            timerDisplay.style.display = 'none';
+                            onFinish();
+                        }
+                    }, 1000);
+        
+                    return interval;
+                }
+        
+                // --- Gemini API call for AI feedback ---
+                async function getFeedbackFromAI() {
+                    document.getElementById('loading-feedback').style.display = 'block';
+                    document.getElementById('feedback-content').style.display = 'none';
+        
+                    const prompt = `You are an expert evaluator assessing consulting-style business case responses. You will receive two answers to a business case and must evaluate each individually, assigning a score from 1 to 10 per answer based on clearly defined criteria. Then, provide a structured and standardized feedback paragraph. Finally, calculate the overall score as the average of the two individual scores (rounded to one decimal place). 
+         📌 Business Case Prompt: 
+        
+         A diesel truck manufacturer that primarily sells to 3PL (third-party logistics companies), carriers, and private fleet companies (e.g., Amazon) is considering entering the electric vehicle market. The CEO of the company is asking for your advice on whether they should produce and sell electric trucks (e-trucks). 
+         🔹 Question 1: 
+        
+         How would you evaluate whether they should produce and sell electric trucks (e-trucks)? What factors would you consider? 
+         🔹 Reference solution for Question 1: 
+        
+         E-truck market 
+         Size and growth rate 
+         Largest e-truck producers (incl. market shares and key differentiating points) 
+         Average margin in the space 
+         Diesel truck manufacturer 
+         Target customer segments for e-trucks (same B2B or B2C too?) 
+         Expected e-truck model (e.g., type, key selling points) 
+         Distribution (own/partner dealerships; online; etc.) 
+         Valuation 
+         Expected capex 
+         Investment criteria (e.g., ROI, NPV, payback period) 
+         Expected profitability (incl. synergy analysis): 
+         Revenue 
+         Costs 
+         Market entry risks 
+         Market-specific risks 
+         Financial risks 
+         Operational risks 
+         🟠 Scoring criteria for Question 1 (1–10 points): 
+        
+         Structure (0–2 pts) 
+         2 = well-structured using 4 key areas 
+         1.75–1 = alternate structure but complete and logical 
+         1–0.25 = some structure, but lacking or unbalanced 
+         0 = no logical structure or disorganized 
+         Factors/Variables (1–8.5 pts) 
+         9+ variables = 8.5 
+         8 variables = 7 
+         7 = 6 
+         5 = 4 
+         4 = 3 
+         3 = 2 
+         2 = 1 
+         <2 = 0 
+         🔹 Question 2: 
+        
+         What are the key purchasing decision criteria for customers choosing an electric truck (instead of a diesel one)? What factors do you think influence their decision? 
+         🔹 Reference solution for Question 2: 
+        
+         Financial analysis 
+         Cost factors: 
+         Truck price 
+         Maintenance (spare parts, services) 
+         Fuel/electricity consumption 
+         Insurance 
+         Revenue factors: 
+         Truck's useful life 
+         Capacity (power, payload, mileage) 
+         Utilization rate (due to fewer repairs) 
+         Salvage value 
+         Investment: 
+         ROI/payback 
+         Capex for charging stations 
+         Strategic value 
+         Customer experience improvements 
+         Brand image (eco-friendly) 
+         Risk diversification 
+         Less dependency on oil/gas 
+         Lower legal/pollution compliance risks 
+         Risks 
+         Operational risks: 
+         Lack of support infrastructure (mechanics, service stations) 
+         Dual-fleet complexity 
+         Immature tech (design flaws) 
+         Charging time 
+         Lack of charging stations 
+         Financial risks: 
+         Loss of scale economies 
+         Underestimated costs or optimistic revenues 
+         ✅ Final Output Format: 
+         Score: [Average score between Q1 and Q2, e.g., 7.5] 
+         Feedback: 
+        
+         Your feedback must follow this exact structure, adapted to the candidate’s performance. Fill in the brackets accordingly: 
+         The answer to Question 1 was [well structured and included all key areas / well structured but missed some key areas such as... / poorly structured but followed a logical flow; it could have been structured into the following 4 areas... / poorly structured and lacked logical order; it could have been organized into the following areas...]. 
+        
+         You included [all / most / a good portion / some / very few] of the key variables relevant to answering this type of question. [You missed / you could have also included / you should have considered] the following: [...]. 
+         In Question 2, you [structured your answer well / attempted to organize it but could have used the following structure... / did not structure your answer and could have done so like this...]. 
+        
+         You included [many variables across diverse areas / many variables but focused on a narrow set / a reasonable number of variables across some areas / only a few variables]. 
+        
+         Additional relevant factors you could have included: [...]. 
+         Only return the final score and the structured feedback paragraph. Do not include any justification or breakdown of the score.
+        
+                        Here are the user's answers:
+                        ---
+                        Question 1 Answer:
+                        ${state.q_case_1}
+        
+                        Question 2 Answer:
+                        ${state.q_case_2}
+                        ---
+                        `;
+        
+                    const payload = {
+                        contents: [{ role: "user", parts: [{ text: prompt }] }],
+                    };
+        
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+        
+                    let retries = 0;
+                    const maxRetries = 5;
+                    const baseDelay = 1000; // 1 second
+        
+                    async function fetchWithExponentialBackoff() {
+                        try {
+                            const response = await fetch(apiUrl, {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify(payload)
+                            });
+        
+                            if (response.status === 429 && retries < maxRetries) {
+                                const delay = baseDelay * Math.pow(2, retries);
+                                retries++;
+                                await new Promise(resolve => setTimeout(resolve, delay));
+                                return await fetchWithExponentialBackoff();
+                            } else if (!response.ok) {
+                                 throw new Error(`API error: ${response.statusText}`);
+                            }
+        
+                            const result = await response.json();
+                            if (result.candidates && result.candidates.length > 0 && result.candidates[0].content && result.candidates[0].content.parts && result.candidates[0].content.parts.length > 0) {
+                                const text = result.candidates[0].content.parts[0].text;
+                                // Parse the AI's response
+                                const scoreMatch = text.match(/Score:\s*([\d.]+)/);
+                                const feedbackMatch = text.match(/Feedback:\s*([\s\S]*)/);
+                                if (scoreMatch && feedbackMatch) {
+                                    state.aiScore = parseFloat(scoreMatch[1]);
+                                    state.aiFeedback = feedbackMatch[1].trim();
+        
+                                    document.getElementById('user-score').textContent = `🎯 ${state.aiScore.toFixed(1)} / 10`;
+                                    document.getElementById('user-feedback').textContent = state.aiFeedback;
+        
+                                    document.getElementById('loading-feedback').style.display = 'none';
+                                    document.getElementById('feedback-content').style.display = 'block';
+                                } else {
+                                    throw new Error("AI response format is unexpected.");
+                                }
+                            } else {
+                                throw new Error("AI response content is missing or malformed.");
+                            }
+                        } catch (error) {
+                            console.error('Error fetching AI feedback:', error);
+                            showMessage("An error occurred while generating feedback. Please try again.");
+                            document.getElementById('loading-feedback').textContent = "Failed to load feedback.";
+                        }
                     }
-
-                    const result = await response.json();
                     
-                    if (result.result === 'success') {
+                    fetchWithExponentialBackoff();
+                }
+        
+                // --- Function to save data to Firestore ---
+                async function sendDataToFirestore() {
+                    document.getElementById('sending-data').style.display = 'flex';
+                    document.getElementById('submission-success').style.display = 'none';
+                    document.getElementById('submission-error').style.display = 'none';
+        
+                    // Retry logic with a short delay if Firebase is not ready
+                    let attempts = 0;
+                    while (!isAuthReady && attempts < 10) { 
+                        console.log(`Firestore not ready, retrying in 500ms... (Attempt ${attempts + 1})`);
+                        await new Promise(resolve => setTimeout(resolve, 500));
+                        attempts++;
+                    }
+        
+                    if (!isAuthReady || !db) {
+                        console.error("Firestore is not ready after multiple attempts. Aborting data save.");
+                        document.getElementById('sending-data').style.display = 'none';
+                        document.getElementById('submission-error').style.display = 'block';
+                        return;
+                    }
+        
+                    // Data object to be saved
+                    const data = {
+                        timestamp: new Date().toISOString(),
+                        name: state.name,
+                        q1: state.q1, q2: state.q2, q3: state.q3, q4: state.q4,
+                        q_case_1: state.q_case_1,
+                        q_case_2: state.q_case_2,
+                        q5_score: state.q5_score,
+                        q5_text: state.q5_text,
+                        q6: state.q6, q7: state.q7, q8: state.q8,
+                        q9: state.q9, q10: state.q10, q11a: state.q11a, q11b: state.q11b, q11c: state.q11c, q11d: state.q11d,
+                        q7_general: state.q7_general, q8_general: state.q8_general, q9_general: state.q9_general,
+                        aiScore: state.aiScore,
+                        aiFeedback: state.aiFeedback
+                    };
+                    
+                    try {
+                        // Save data to the public 'risposte' collection
+                        const collectionPath = `artifacts/${appId}/public/data/risposte`;
+                        console.log("Attempting to save data to Firestore collection:", collectionPath);
+                        await addDoc(collection(db, collectionPath), data);
+                        
                         document.getElementById('sending-data').style.display = 'none';
                         document.getElementById('submission-success').style.display = 'block';
-                    } else {
-                        // Log the error from the server, if available
-                        console.error('Error from Google Apps Script:', result.error);
+                        console.log("Data successfully sent to Firestore!");
+                    } catch (error) {
+                        console.error('Error sending data to Firestore:', error);
                         document.getElementById('sending-data').style.display = 'none';
                         document.getElementById('submission-error').style.display = 'block';
                     }
-                } catch (error) {
-                    console.error('Error sending data to Google Sheet:', error);
-                    document.getElementById('sending-data').style.display = 'none';
-                    document.getElementById('submission-error').style.display = 'block';
                 }
-            }
-
-
-            // --- Event Handlers ---
-            nextButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const buttonId = button.id;
-                    switch (buttonId) {
-                        case 'next-1':
-                            const fullName = document.getElementById('full-name').value.trim();
-                            const consent = document.getElementById('consent-checkbox').checked;
-                            if (fullName && consent) {
-                                state.name = fullName;
-                                showScreen(2);
-                            } else {
-                                showMessage("Please enter your full name and agree to participate.");
-                            }
-                            break;
-                        case 'next-2':
-                            showScreen(3);
-                            break;
-                        case 'next-3':
-                            showScreen(4);
-                            window.timerInterval = startTimer(120, () => {
-                                // Auto-advance on timeout
-                                state.q_case_1 = document.getElementById('q-case-1').value.trim();
-                                showScreen(5);
-                                window.timerInterval = startTimer(90, () => {
-                                    state.q_case_2 = document.getElementById('q-case-2').value.trim();
-                                    showScreen(6);
+        
+        
+                // --- Event Handlers ---
+                nextButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const buttonId = button.id;
+                        switch (buttonId) {
+                            case 'next-1':
+                                const fullName = document.getElementById('full-name').value.trim();
+                                const consent = document.getElementById('consent-checkbox').checked;
+                                if (fullName && consent) {
+                                    state.name = fullName;
+                                    showScreen(2);
+                                } else {
+                                    showMessage("Please enter your full name and agree to participate.");
+                                }
+                                break;
+                            case 'next-2':
+                                showScreen(3);
+                                break;
+                            case 'next-3':
+                                showScreen(4);
+                                window.timerInterval = startTimer(120, () => {
+                                    // Auto-advance on timeout
+                                    state.q_case_1 = document.getElementById('q-case-1').value.trim();
+                                    showScreen(5);
+                                    window.timerInterval = startTimer(90, () => {
+                                        state.q_case_2 = document.getElementById('q-case-2').value.trim();
+                                        showScreen(6);
+                                    });
                                 });
-                            });
-                            break;
-                        case 'next-4':
-                            clearInterval(window.timerInterval);
-                            timerDisplay.style.display = 'none';
-                            state.q_case_1 = document.getElementById('q-case-1').value.trim();
-                            if (state.q_case_1) {
-                                showScreen(5);
-                                window.timerInterval = startTimer(90, () => showScreen(6));
-                            } else {
-                                showMessage("Please provide your answer before proceeding.");
-                            }
-                            break;
-                        case 'next-5':
-                            clearInterval(window.timerInterval);
-                            timerDisplay.style.display = 'none';
-                            state.q_case_2 = document.getElementById('q-case-2').value.trim();
-                            if (state.q_case_2) {
-                                showScreen(6);
-                            } else {
-                                showMessage("Please provide your answer before proceeding.");
-                            }
-                            break;
-                        case 'next-6':
-                            state.q5_score = parseInt(document.getElementById('q5-slider').value, 10);
-                            state.q5_text = document.getElementById('q5-textbox').value.trim();
-                            showScreen(7);
-                            getFeedbackFromAI();
-                            break;
-                        case 'next-7':
-                            showScreen(8);
-                            break;
-                        case 'next-8':
-                            showScreen(9);
-                            break;
-                        case 'next-9':
-                            showScreen(10);
-                            break;
-                        case 'next-10':
-                            showScreen(11);
-                            sendDataToSheet();
-                            break;
-                    }
+                                break;
+                            case 'next-4':
+                                clearInterval(window.timerInterval);
+                                timerDisplay.style.display = 'none';
+                                state.q_case_1 = document.getElementById('q-case-1').value.trim();
+                                if (state.q_case_1) {
+                                    showScreen(5);
+                                    window.timerInterval = startTimer(90, () => showScreen(6));
+                                } else {
+                                    showMessage("Please provide your answer before proceeding.");
+                                }
+                                break;
+                            case 'next-5':
+                                clearInterval(window.timerInterval);
+                                timerDisplay.style.display = 'none';
+                                state.q_case_2 = document.getElementById('q-case-2').value.trim();
+                                if (state.q_case_2) {
+                                    showScreen(6);
+                                } else {
+                                    showMessage("Please provide your answer before proceeding.");
+                                }
+                                break;
+                            case 'next-6':
+                                state.q5_score = parseInt(document.getElementById('q5-slider').value, 10);
+                                state.q5_text = document.getElementById('q5-textbox').value.trim();
+                                showScreen(7);
+                                getFeedbackFromAI();
+                                break;
+                            case 'next-7':
+                                showScreen(8);
+                                break;
+                            case 'next-8':
+                                showScreen(9);
+                                break;
+                            case 'next-9':
+                                showScreen(10);
+                                break;
+                            case 'next-10':
+                                state.q7_general = parseInt(document.getElementById('q7-general-slider').value, 10);
+                                state.q8_general = parseInt(document.getElementById('q8-general-slider').value, 10);
+                                state.q9_general = parseInt(document.getElementById('q9-general-slider').value, 10);
+                                showScreen(11);
+                                sendDataToFirestore();
+                                break;
+                        }
+                    });
                 });
-            });
-
-            // Initial screen display
-            showScreen(1);
-        });
-    </script>
-</body>
-</html>
+        
+                // Initial screen display
+                showScreen(1);
+            </script>
+        </body>
+        </html>
